@@ -245,8 +245,8 @@ void bbggLTMaker::Init(TTree *tree)
    //fChain->SetBranchAddress("leadingJet_DeepCSV", &leadingJet_DeepCSV, &b_leadingJet_bDis);
    //fChain->SetBranchAddress("subleadingJet_DeepCSV", &subleadingJet_DeepCSV, &b_subleadingJet_bDis);
    //fChain->SetBranchAddress("treeID", &treeID, &b_treeID);
-   //fChain->SetBranchAddress("MX_noMReg", &MX, &b_MX);
-   fChain->SetBranchAddress("MX", &MX, &b_MX);
+   fChain->SetBranchAddress("MX_noMReg", &MX, &b_MX);
+   //fChain->SetBranchAddress("MX", &MX, &b_MX);
    fChain->SetBranchAddress("event", &event, &b_event);
    fChain->SetBranchAddress("HHbbggMVA", &HHbbggMVA, &b_HHbbggMVA);
    //fChain->SetBranchAddress("MVAwoMjj", &HHbbggMVA, &b_HHbbggMVA);                     //MVA training w/o include Mjj
